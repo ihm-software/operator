@@ -1,10 +1,6 @@
 name: Build and Upload tekton-operator Docker image
   
-on: 
-  pull_request:
-    branches:
-      - master 
-
+on: [ push, pull_request]
 
 env:
   OPERATOR_SDK_VERSION: "v0.17.0"
